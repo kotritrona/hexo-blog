@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Kotri Lv.221">
+    
+    
+    
+    
+    
+    
+    <title>Factorio 0.17版感受 | Kotri&#39;s Lawn Floor</title>
+    <link href="https://kotritrona.github.io/hexo-blog" rel="prefetch" />
+
+    
+<link rel="stylesheet" href="/hexo-blog/css/bootstrap.min.css">
+<link rel="stylesheet" href="/hexo-blog/css/aos.css">
+<link rel="stylesheet" href="/hexo-blog/css/style.css">
+
+    
+<script src="/hexo-blog/js/jquery.min.js"></script>
+
+    
+<script src="/hexo-blog/js/bootstrap.min.js"></script>
+
+    
+<script src="/hexo-blog/js/aos.js"></script>
+
+    
+<script src="/hexo-blog/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/hexo-blog/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: repeat 100% url('/hexo-blog/imgs/xsbg.gif');
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/hexo-blog/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/hexo-blog/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+<meta name="generator" content="Hexo 4.1.1"></head>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://kotritrona.github.io/hexo-blog">
+                
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand navbar-brand-text">Kotri&#39;s Lawn Floor</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/hexo-blog/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/hexo-blog/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="https://kotritrona.github.io/jump2048/ojhime.html">
+                        <i class="fa fa-bookmark"></i>HimeJumper
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/hexo-blog/tags/about/">about</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/hexo-blog/tags/javascript/">javascript</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/hexo-blog/tags/programming/">programming</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/hexo-blog/tags/mdzz/">mdzz</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/hexo-blog/tags/css/">css</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/hexo-blog/tags/server/">server</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/hexo-blog/tags/web/">web</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/hexo-blog/tags/machinelearning/">machinelearning</a>
+                        </li>
+                        
+                        
+                        <!--li>
+                            <a href="/hexo-blog/tags">...</a>
+                        </li-->
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/hexo-blog/2019/12/19/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://kotritrona.github.io/hexo-blog">Kotri&#39;s Lawn Floor</a>
+        >
+        <span>Factorio 0.17版感受</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/hexo-blog/2019/07/28/factorio017/">Factorio 0.17版感受</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/hexo-blog/tags/games/">games</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2019-07-28
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/hexo-blog/2019/07/28/factorio017/">Factorio 0.17版感受</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2019-07-28
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/hexo-blog/tags/games/">games</a>
+                
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <p>大概两个月以前就打通了，最近进游戏看了看，感觉通关了，就把游戏删了<br>做了大概80个研究室同时运作的瓶子（中间偶尔会卡白瓶的程度）</p>
+<a id="more"></a>
+
+<p>因为已经0.12版打了一次，0.16版打了大概两次半吧，这次速度和规划都好了很多<br>研究室造在郊外，基地旁边专门留了一大片造火箭的空地，结果到最后只用了一半<br>但是确实造的很舒服，不像之前布线特别乱<br>这次中间用到个矿区出来6排矿的设计，按照之前的玩法根本没空间把传送带拉出来</p>
+<p>这个0.17和0.16的区别，主要就是开局资源调节范围大了很多<br>我按照之前的玩法把所有资源拉到最高，结果打到结束几乎没有能把矿采完的<br>虫子调到大概最低的程度，造完整个工厂没看见一只，跑了大概三倍的距离，见到零星几个虫巢</p>
+<p>感觉这种程度吧，有是应该有，但是最好做成隐藏设定，必须用控制台调出来那种<br>毕竟这太imba了……<br>不知道能不能中途调难度，现在把虫巢调出来还来得及<br>0.16那稍微走远些就看到漫山遍野的虫巢只能靠核弹炸的样子……</p>
+<p>但是总的来说还是更复杂了一些，体现在配方和研究上<br>每种瓶子加了自己的科技，紫瓶改成需要30个铁轨，黄瓶改成需要轻质框架<br>火箭三素材也改成有自己的科技可以早期研发了，还有卫星也需要研发，还在火箭井之后<br>（这不是坑人不装卫星么）</p>
+<p>还有灰瓶改成需要用墙造，之前的那个用炮塔的配方，铁资源消耗的太厉害了……<br>然后就是经常更新了吧，这个没办法……</p>
+<p>后来看到新闻说作者想把初级石油处理改成只出石油气<br>就想，这谁还用高级的处理啊，好像现版本谁会差那点资源一样……</p>
+<p>总觉得游戏都是越做越不硬核了，毕竟要大众化<br>像工作室从亚兰德到不思议，怪猎从硬核动作做到狩技转身衣<br>这游戏也是从老版本必须出去刷虫子，做到现在可以窝家里发展科技之后文明胜利<br>不过另一方面，也有专门做硬核方向的新游戏不停在出，像什么黑魂只狼，大概也不需要担心吧</p>
+<p>最后贴个图</p>
+<p><img src="https://i.imgur.com/g6P8Jmy.jpg" alt=""></p>
+
+    </div>
+</article>
+
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="1000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/hexo-blog/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="fade-up" data-aos-duration="1000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            Kotri Lv.221
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/hexo-blog/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"></p>
+        </div>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="1000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/06/12/discoelysium/">Disco Elysium</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/06/09/bluereflection_pics/">Blue Reflection（剧情图鉴赏）</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/06/09/bluereflection/">Blue Reflection</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/06/05/20200605/">音乐游戏的演化</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/06/03/magicalcharming_zero/">Magical Charming! (体验版)</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/05/30/20200530/">脱线结局</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/05/28/magicalcharming_pics/">Magical Charming!（剧情图鉴赏）</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/05/28/magicalcharming_te/">Magical Charming! (True End)</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/05/20/magicalcharming/">Magical Charming!</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/05/18/20200518/">音译解释法</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="1000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2019/12/20/revwenyan/">自动生成文言编程</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2019/12/24/roronapie/">罗罗娜的机器学习实验室，第1.4.1章</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/01/02/newyear2020res/">新年许愿</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/01/03/finishedayesha/">爱夏的炼金工房</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/04/18/20200418/">把那边我写的文章都转过来了</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2019/05/03/childrenshadow/">童年阴影理论</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2019/11/09/mhib/">Monster Hunter World Iceborne</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/05/01/ebf5/">Epic Battle Fantasy 5</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/05/03/sakurauta_rin/">樱之诗（凛线）</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/hexo-blog/2020/06/03/magicalcharming_zero/">Magical Charming! (体验版)</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="1000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/hexo-blog/2019/07/28/factorio017/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/hexo-blog/2019/07/28/factorio017/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/hexo-blog/2019/07/28/factorio017/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/hexo-blog/tags/about/" style="font-size: 14.585182414131886px;" class="tag-cloud-link">about</a>
+    
+    <a href="/hexo-blog/tags/javascript/" style="font-size: 10.858102617998671px;" class="tag-cloud-link">javascript</a>
+    
+    <a href="/hexo-blog/tags/programming/" style="font-size: 19.036287821533083px;" class="tag-cloud-link">programming</a>
+    
+    <a href="/hexo-blog/tags/mdzz/" style="font-size: 16.484561517093873px;" class="tag-cloud-link">mdzz</a>
+    
+    <a href="/hexo-blog/tags/css/" style="font-size: 18.249669817360292px;" class="tag-cloud-link">css</a>
+    
+    <a href="/hexo-blog/tags/server/" style="font-size: 8.60198982521839px;" class="tag-cloud-link">server</a>
+    
+    <a href="/hexo-blog/tags/web/" style="font-size: 10.917419300965133px;" class="tag-cloud-link">web</a>
+    
+    <a href="/hexo-blog/tags/machinelearning/" style="font-size: 15.042041269050326px;" class="tag-cloud-link">machinelearning</a>
+    
+    <a href="/hexo-blog/tags/atelier/" style="font-size: 15.373986585567266px;" class="tag-cloud-link">atelier</a>
+    
+    <a href="/hexo-blog/tags/github/" style="font-size: 17.728231812606364px;" class="tag-cloud-link">github</a>
+    
+    <a href="/hexo-blog/tags/games/" style="font-size: 16.12756538193972px;" class="tag-cloud-link">games</a>
+    
+    <a href="/hexo-blog/tags/philosophy/" style="font-size: 9.256683544139054px;" class="tag-cloud-link">philosophy</a>
+    
+    <a href="/hexo-blog/tags/stats/" style="font-size: 17.052192874394805px;" class="tag-cloud-link">stats</a>
+    
+    <a href="/hexo-blog/tags/music/" style="font-size: 17.045570525341013px;" class="tag-cloud-link">music</a>
+    
+    <a href="/hexo-blog/tags/youtube/" style="font-size: 17.824696751939516px;" class="tag-cloud-link">youtube</a>
+    
+    <a href="/hexo-blog/tags/react/" style="font-size: 8.717055489142908px;" class="tag-cloud-link">react</a>
+    
+    <a href="/hexo-blog/tags/learning/" style="font-size: 19.756265365098276px;" class="tag-cloud-link">learning</a>
+    
+    <a href="/hexo-blog/tags/galgame/" style="font-size: 8.666521048477602px;" class="tag-cloud-link">galgame</a>
+    
+    <a href="/hexo-blog/tags/vtuber/" style="font-size: 12.204753413483608px;" class="tag-cloud-link">vtuber</a>
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/kotritrona/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://gitlab.com/kotri/" target="_blank">GitLab</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/kotri-lv145" target="_blank">知乎</a>
+    </li>
+    
+</div>
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 Kotri Lv.221 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+
+<script src="/hexo-blog/js/activate-power-mode.js"></script>
+
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/hexo-blog/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/hexo-blog/js/hs.js"></script>
+<script src="/hexo-blog/js/blog.js"></script>
+
+
+
+
+</html>
